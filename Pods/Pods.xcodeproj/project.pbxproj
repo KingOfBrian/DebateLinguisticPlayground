@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02EB8BFF66A919DB633BDDE2A111C3ED /* AdaptableTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83BE6781EA0BC83B7EB95C121C38659 /* AdaptableTextContainer.swift */; };
+		0FD1BDE3ADC5FD51A299ADE89DA993AA /* StyleableTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AD8273E60353DB1B4210642D8E509 /* StyleableTextContainer.swift */; };
+		1B603B130D3CF1D00E7E605B4A189CEE /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B9DF47DB2044A20700936B0DE6A5A /* Tracking.swift */; };
+		2CE561DABE7DAE5C14491D5757499355 /* StyleAttributeTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99757B73C787E760BEE4131880DE27B /* StyleAttributeTransformation.swift */; };
+		2EF3D8DC3B80C5844DA50D7BE1C07743 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9309322167F41B364714EF271F0A5D51 /* Platform.swift */; };
+		2F3A848D830FF7BED3733BC5FF4ED289 /* Pods-BonMotPlayground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FE328B2B1F8572E7B2DDC9E1A3DF32 /* Pods-BonMotPlayground-dummy.m */; };
+		303B149F87DAA9AAB753A1CCAA327FEF /* NSMutableAttributedString+BonMot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A01661EFB0B3C09AE477303030C910 /* NSMutableAttributedString+BonMot.swift */; };
+		3681E766C26213121F1BD487977212BA /* TagStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE2ACAEA2022E06A97EC5F69FF576D /* TagStyles.swift */; };
+		36B9BC76BA004A312875AFE7AAD1FD92 /* BonMot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A349E5BCE9B49567509FC1FD6ADD43 /* BonMot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		413E8B52E29AA2618D77D54061D544D7 /* NSAttributedString+Adapt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE929CD76B9C02EA776E3D226B04C5A /* NSAttributedString+Adapt.swift */; };
+		46FD80A3802F354EA947B11738A40F77 /* AdaptiveAttributeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A50916453CAF03FE8FE0A02C689BCC /* AdaptiveAttributeHelpers.swift */; };
+		480CAF6B4CB5403A58B62039910D063F /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1CAACE6460ED8AAA480E2FC0F10E6 /* Special.swift */; };
+		5A5D6DE66867A9EA3D45DC6F202D47E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		77F4CD47F494462F6D576B74D894F8C9 /* UIKit+AdaptableTextContainerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660A2CA07F1195FF708769B46E427 /* UIKit+AdaptableTextContainerSupport.swift */; };
+		78F7E443F73CFFBCDD0087CF73FEB132 /* InternalAdaptations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29671741AAD1ACE2D4F89226DD0256EC /* InternalAdaptations.swift */; };
+		79CAE05C3184BE4E4A06F874525EB663 /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCECA01DCC49F940A951C3CA63F3BE23 /* Compatibility.swift */; };
+		7AC2B610032AD944388DD3D7F5D49DA0 /* XMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A43A11685F528042C2BCF7A41E765D /* XMLBuilder.swift */; };
+		837C00951A3E42DF2FE943D2EEB907D3 /* FontFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF56C4DABB36FCA863B21F5F3D59B /* FontFeatures.swift */; };
+		A186FE3A5612894B3537E85442AA8C9D /* BonMot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2969F3D4E1E0554B1FDE0B194506D121 /* BonMot-dummy.m */; };
+		AE0BE04376D2171AF9F4D949AB7DF6B1 /* UIKit+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD013967F21C0871BB88A5BBD1BA40 /* UIKit+Helpers.swift */; };
+		B1E1D36543000E0E1B6B0A7D418828C0 /* AttributedStringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F38D5C70A8D3C7C7A75D142FC062F /* AttributedStringStyle.swift */; };
+		BB89421E538A1B97539C0F3CF35E3A18 /* NSAttributedString+BonMot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43877D10F2C96C6339011EA87BB175 /* NSAttributedString+BonMot.swift */; };
+		C198F8D072CE944EC991F0507FBF4D8F /* TagStyles+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60026DAC39B2731FCF8FA0582C58025D /* TagStyles+IBInspectable.swift */; };
+		C1A8C9509AEC9D2BD29698B2CE4A76F9 /* AdaptiveStyleTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5A3644D991E30357B9E96E5E4AAE5 /* AdaptiveStyleTransformation.swift */; };
+		C678DCF4A1BD6540B69D99435D811922 /* StyleAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B6AAA55F7CE412FD8AB308C6869327 /* StyleAttributes.swift */; };
+		D17BA2B8C845E45F9A0B8957DFDB4867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E35BB4DE3F029A91E34FDEE35C6F04A2 /* AdaptiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76502D33E948178051CDD6F920667B5F /* AdaptiveStyle.swift */; };
+		EA41E7F19264B47EF3D87D8F083B3965 /* AttributedStringStylePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF59C45166720B6C476A33BC737D45 /* AttributedStringStylePart.swift */; };
+		F44AB24AC1F553D67B5334F2C9A59045 /* Pods-BonMotPlayground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A750728B4A02ED8A661710CCD8C129 /* Pods-BonMotPlayground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C33766C2FCFA652E7D08A122C7516A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CACD87F9244976C0CE4C6D0261BEF8F;
+			remoteInfo = BonMot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078C7957F9D365225EEE36ECCDED6C65 /* Pods-BonMotPlayground-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BonMotPlayground-frameworks.sh"; sourceTree = "<group>"; };
+		0BCC6E1312BFB3E81BA70BAD8BBE9FAA /* Pods-BonMotPlayground-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BonMotPlayground-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FF5A3644D991E30357B9E96E5E4AAE5 /* AdaptiveStyleTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveStyleTransformation.swift; sourceTree = "<group>"; };
+		11EF59C45166720B6C476A33BC737D45 /* AttributedStringStylePart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AttributedStringStylePart.swift; sourceTree = "<group>"; };
+		152F38D5C70A8D3C7C7A75D142FC062F /* AttributedStringStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AttributedStringStyle.swift; sourceTree = "<group>"; };
+		24443D273E73589A6CA48329FA96AC3E /* Pods-BonMotPlayground-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BonMotPlayground-acknowledgements.markdown"; sourceTree = "<group>"; };
+		289DF56C4DABB36FCA863B21F5F3D59B /* FontFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontFeatures.swift; sourceTree = "<group>"; };
+		28E7DD33BAF8F039B0FA5E65E43179C5 /* BonMot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BonMot.modulemap; sourceTree = "<group>"; };
+		2921EA1C03EFE3FABF2649C00911C29D /* Pods_BonMotPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonMotPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29671741AAD1ACE2D4F89226DD0256EC /* InternalAdaptations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalAdaptations.swift; sourceTree = "<group>"; };
+		2969F3D4E1E0554B1FDE0B194506D121 /* BonMot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BonMot-dummy.m"; sourceTree = "<group>"; };
+		42E1CAACE6460ED8AAA480E2FC0F10E6 /* Special.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
+		46A01661EFB0B3C09AE477303030C910 /* NSMutableAttributedString+BonMot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+BonMot.swift"; sourceTree = "<group>"; };
+		4BE660A2CA07F1195FF708769B46E427 /* UIKit+AdaptableTextContainerSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIKit+AdaptableTextContainerSupport.swift"; sourceTree = "<group>"; };
+		55DE2ACAEA2022E06A97EC5F69FF576D /* TagStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TagStyles.swift; sourceTree = "<group>"; };
+		562B9DF47DB2044A20700936B0DE6A5A /* Tracking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
+		60026DAC39B2731FCF8FA0582C58025D /* TagStyles+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TagStyles+IBInspectable.swift"; sourceTree = "<group>"; };
+		69FE328B2B1F8572E7B2DDC9E1A3DF32 /* Pods-BonMotPlayground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BonMotPlayground-dummy.m"; sourceTree = "<group>"; };
+		70A50916453CAF03FE8FE0A02C689BCC /* AdaptiveAttributeHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveAttributeHelpers.swift; sourceTree = "<group>"; };
+		76502D33E948178051CDD6F920667B5F /* AdaptiveStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveStyle.swift; sourceTree = "<group>"; };
+		789AD8273E60353DB1B4210642D8E509 /* StyleableTextContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StyleableTextContainer.swift; sourceTree = "<group>"; };
+		83A349E5BCE9B49567509FC1FD6ADD43 /* BonMot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-umbrella.h"; sourceTree = "<group>"; };
+		8473149B62990099C63405F625C914E5 /* Pods-BonMotPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BonMotPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		8EE929CD76B9C02EA776E3D226B04C5A /* NSAttributedString+Adapt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Adapt.swift"; sourceTree = "<group>"; };
+		9309322167F41B364714EF271F0A5D51 /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		933921BD47EF4DCC7DFBE03A7584FF78 /* BonMot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BonMot.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96DD013967F21C0871BB88A5BBD1BA40 /* UIKit+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIKit+Helpers.swift"; sourceTree = "<group>"; };
+		A6B6AAA55F7CE412FD8AB308C6869327 /* StyleAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StyleAttributes.swift; sourceTree = "<group>"; };
+		B5A43A11685F528042C2BCF7A41E765D /* XMLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = XMLBuilder.swift; sourceTree = "<group>"; };
+		B99757B73C787E760BEE4131880DE27B /* StyleAttributeTransformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StyleAttributeTransformation.swift; sourceTree = "<group>"; };
+		C9F956DB55090D5711C545D449942901 /* BonMot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BonMot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC82F6DA5C16865935952E409DC8608F /* BonMot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonMot-prefix.pch"; sourceTree = "<group>"; };
+		CCECA01DCC49F940A951C3CA63F3BE23 /* Compatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
+		CD5F785F0A40E9A08C17F2D91DE1D526 /* Pods-BonMotPlayground-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BonMotPlayground-resources.sh"; sourceTree = "<group>"; };
+		CE63F08D388FD87632D8ADC31BEE49C4 /* Pods-BonMotPlayground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BonMotPlayground.modulemap"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D83BE6781EA0BC83B7EB95C121C38659 /* AdaptableTextContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptableTextContainer.swift; sourceTree = "<group>"; };
+		DA43877D10F2C96C6339011EA87BB175 /* NSAttributedString+BonMot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+BonMot.swift"; sourceTree = "<group>"; };
+		E515D310C843F0E8C3A2F0759D0D289B /* Pods-BonMotPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BonMotPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		F8A750728B4A02ED8A661710CCD8C129 /* Pods-BonMotPlayground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BonMotPlayground-umbrella.h"; sourceTree = "<group>"; };
+		F963F3B2AC11E67B3537495CE86EB792 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F966BCFECE0766B1760EECB9862038D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CE477E1C146017EB6ACFCB19FDC58C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17BA2B8C845E45F9A0B8957DFDB4867 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A9A1BF754EA87319BD01A81BE0CBD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5D6DE66867A9EA3D45DC6F202D47E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D43347313F9BEDFAD288B128EBB132F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4053F92BD977C4CA5FB45B485856EBC6 /* BonMot */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2765920C0686F3DFC9891885F9D91A94 /* Pods-BonMotPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				F966BCFECE0766B1760EECB9862038D4 /* Info.plist */,
+				CE63F08D388FD87632D8ADC31BEE49C4 /* Pods-BonMotPlayground.modulemap */,
+				24443D273E73589A6CA48329FA96AC3E /* Pods-BonMotPlayground-acknowledgements.markdown */,
+				0BCC6E1312BFB3E81BA70BAD8BBE9FAA /* Pods-BonMotPlayground-acknowledgements.plist */,
+				69FE328B2B1F8572E7B2DDC9E1A3DF32 /* Pods-BonMotPlayground-dummy.m */,
+				078C7957F9D365225EEE36ECCDED6C65 /* Pods-BonMotPlayground-frameworks.sh */,
+				CD5F785F0A40E9A08C17F2D91DE1D526 /* Pods-BonMotPlayground-resources.sh */,
+				F8A750728B4A02ED8A661710CCD8C129 /* Pods-BonMotPlayground-umbrella.h */,
+				8473149B62990099C63405F625C914E5 /* Pods-BonMotPlayground.debug.xcconfig */,
+				E515D310C843F0E8C3A2F0759D0D289B /* Pods-BonMotPlayground.release.xcconfig */,
+			);
+			name = "Pods-BonMotPlayground";
+			path = "Target Support Files/Pods-BonMotPlayground";
+			sourceTree = "<group>";
+		};
+		2A31864D14C8925A65D0ACC825685E78 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				152F38D5C70A8D3C7C7A75D142FC062F /* AttributedStringStyle.swift */,
+				11EF59C45166720B6C476A33BC737D45 /* AttributedStringStylePart.swift */,
+				CCECA01DCC49F940A951C3CA63F3BE23 /* Compatibility.swift */,
+				289DF56C4DABB36FCA863B21F5F3D59B /* FontFeatures.swift */,
+				DA43877D10F2C96C6339011EA87BB175 /* NSAttributedString+BonMot.swift */,
+				46A01661EFB0B3C09AE477303030C910 /* NSMutableAttributedString+BonMot.swift */,
+				9309322167F41B364714EF271F0A5D51 /* Platform.swift */,
+				42E1CAACE6460ED8AAA480E2FC0F10E6 /* Special.swift */,
+				A6B6AAA55F7CE412FD8AB308C6869327 /* StyleAttributes.swift */,
+				B99757B73C787E760BEE4131880DE27B /* StyleAttributeTransformation.swift */,
+				55DE2ACAEA2022E06A97EC5F69FF576D /* TagStyles.swift */,
+				562B9DF47DB2044A20700936B0DE6A5A /* Tracking.swift */,
+				B5A43A11685F528042C2BCF7A41E765D /* XMLBuilder.swift */,
+				956D7102B826C23610CA430E80ACC57E /* UIKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4053F92BD977C4CA5FB45B485856EBC6 /* BonMot */ = {
+			isa = PBXGroup;
+			children = (
+				2A31864D14C8925A65D0ACC825685E78 /* Sources */,
+				F8B2EA4E26F5A146176E2707E63BB209 /* Support Files */,
+			);
+			name = BonMot;
+			path = /Users/brianking/sandbox/BonMot;
+			sourceTree = "<absolute>";
+		};
+		69FE6F2F7E3A696EE7626AEC6BD3650A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F956DB55090D5711C545D449942901 /* BonMot.framework */,
+				2921EA1C03EFE3FABF2649C00911C29D /* Pods_BonMotPlayground.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CEDB300B35FF01C5A42F27FC851F4C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2765920C0686F3DFC9891885F9D91A94 /* Pods-BonMotPlayground */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0D43347313F9BEDFAD288B128EBB132F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				69FE6F2F7E3A696EE7626AEC6BD3650A /* Products */,
+				6CEDB300B35FF01C5A42F27FC851F4C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		956D7102B826C23610CA430E80ACC57E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D83BE6781EA0BC83B7EB95C121C38659 /* AdaptableTextContainer.swift */,
+				70A50916453CAF03FE8FE0A02C689BCC /* AdaptiveAttributeHelpers.swift */,
+				76502D33E948178051CDD6F920667B5F /* AdaptiveStyle.swift */,
+				0FF5A3644D991E30357B9E96E5E4AAE5 /* AdaptiveStyleTransformation.swift */,
+				29671741AAD1ACE2D4F89226DD0256EC /* InternalAdaptations.swift */,
+				8EE929CD76B9C02EA776E3D226B04C5A /* NSAttributedString+Adapt.swift */,
+				789AD8273E60353DB1B4210642D8E509 /* StyleableTextContainer.swift */,
+				60026DAC39B2731FCF8FA0582C58025D /* TagStyles+IBInspectable.swift */,
+				4BE660A2CA07F1195FF708769B46E427 /* UIKit+AdaptableTextContainerSupport.swift */,
+				96DD013967F21C0871BB88A5BBD1BA40 /* UIKit+Helpers.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8B2EA4E26F5A146176E2707E63BB209 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28E7DD33BAF8F039B0FA5E65E43179C5 /* BonMot.modulemap */,
+				933921BD47EF4DCC7DFBE03A7584FF78 /* BonMot.xcconfig */,
+				2969F3D4E1E0554B1FDE0B194506D121 /* BonMot-dummy.m */,
+				CC82F6DA5C16865935952E409DC8608F /* BonMot-prefix.pch */,
+				83A349E5BCE9B49567509FC1FD6ADD43 /* BonMot-umbrella.h */,
+				F963F3B2AC11E67B3537495CE86EB792 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../BonMotPlayground/Pods/Target Support Files/BonMot";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9978EE82A8C1BE51198A2E833D84769 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44AB24AC1F553D67B5334F2C9A59045 /* Pods-BonMotPlayground-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8AAA6534F3B394426823906CF307C5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B9BC76BA004A312875AFE7AAD1FD92 /* BonMot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9CACD87F9244976C0CE4C6D0261BEF8F /* BonMot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FC77A1FF866335AB59020D0F4D5264F /* Build configuration list for PBXNativeTarget "BonMot" */;
+			buildPhases = (
+				819333B5658B0E0DD1A0B1DDADC23BB9 /* Sources */,
+				7CE477E1C146017EB6ACFCB19FDC58C0 /* Frameworks */,
+				D8AAA6534F3B394426823906CF307C5C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonMot;
+			productName = BonMot;
+			productReference = C9F956DB55090D5711C545D449942901 /* BonMot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9C8DEC3A664A69254C3B0BCF03040B5 /* Pods-BonMotPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FC61E2E5C1FFD120EB361F8AA9C7B1 /* Build configuration list for PBXNativeTarget "Pods-BonMotPlayground" */;
+			buildPhases = (
+				CF7C140FB6FF9146A3097416142953AF /* Sources */,
+				D1A9A1BF754EA87319BD01A81BE0CBD9 /* Frameworks */,
+				A9978EE82A8C1BE51198A2E833D84769 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B2430D76A3BCC527DC370401295C9B /* PBXTargetDependency */,
+			);
+			name = "Pods-BonMotPlayground";
+			productName = "Pods-BonMotPlayground";
+			productReference = 2921EA1C03EFE3FABF2649C00911C29D /* Pods_BonMotPlayground.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 69FE6F2F7E3A696EE7626AEC6BD3650A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CACD87F9244976C0CE4C6D0261BEF8F /* BonMot */,
+				D9C8DEC3A664A69254C3B0BCF03040B5 /* Pods-BonMotPlayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		819333B5658B0E0DD1A0B1DDADC23BB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EB8BFF66A919DB633BDDE2A111C3ED /* AdaptableTextContainer.swift in Sources */,
+				46FD80A3802F354EA947B11738A40F77 /* AdaptiveAttributeHelpers.swift in Sources */,
+				E35BB4DE3F029A91E34FDEE35C6F04A2 /* AdaptiveStyle.swift in Sources */,
+				C1A8C9509AEC9D2BD29698B2CE4A76F9 /* AdaptiveStyleTransformation.swift in Sources */,
+				B1E1D36543000E0E1B6B0A7D418828C0 /* AttributedStringStyle.swift in Sources */,
+				EA41E7F19264B47EF3D87D8F083B3965 /* AttributedStringStylePart.swift in Sources */,
+				A186FE3A5612894B3537E85442AA8C9D /* BonMot-dummy.m in Sources */,
+				79CAE05C3184BE4E4A06F874525EB663 /* Compatibility.swift in Sources */,
+				837C00951A3E42DF2FE943D2EEB907D3 /* FontFeatures.swift in Sources */,
+				78F7E443F73CFFBCDD0087CF73FEB132 /* InternalAdaptations.swift in Sources */,
+				413E8B52E29AA2618D77D54061D544D7 /* NSAttributedString+Adapt.swift in Sources */,
+				BB89421E538A1B97539C0F3CF35E3A18 /* NSAttributedString+BonMot.swift in Sources */,
+				303B149F87DAA9AAB753A1CCAA327FEF /* NSMutableAttributedString+BonMot.swift in Sources */,
+				2EF3D8DC3B80C5844DA50D7BE1C07743 /* Platform.swift in Sources */,
+				480CAF6B4CB5403A58B62039910D063F /* Special.swift in Sources */,
+				0FD1BDE3ADC5FD51A299ADE89DA993AA /* StyleableTextContainer.swift in Sources */,
+				C678DCF4A1BD6540B69D99435D811922 /* StyleAttributes.swift in Sources */,
+				2CE561DABE7DAE5C14491D5757499355 /* StyleAttributeTransformation.swift in Sources */,
+				C198F8D072CE944EC991F0507FBF4D8F /* TagStyles+IBInspectable.swift in Sources */,
+				3681E766C26213121F1BD487977212BA /* TagStyles.swift in Sources */,
+				1B603B130D3CF1D00E7E605B4A189CEE /* Tracking.swift in Sources */,
+				77F4CD47F494462F6D576B74D894F8C9 /* UIKit+AdaptableTextContainerSupport.swift in Sources */,
+				AE0BE04376D2171AF9F4D949AB7DF6B1 /* UIKit+Helpers.swift in Sources */,
+				7AC2B610032AD944388DD3D7F5D49DA0 /* XMLBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7C140FB6FF9146A3097416142953AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3A848D830FF7BED3733BC5FF4ED289 /* Pods-BonMotPlayground-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27B2430D76A3BCC527DC370401295C9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BonMot;
+			target = 9CACD87F9244976C0CE4C6D0261BEF8F /* BonMot */;
+			targetProxy = C33766C2FCFA652E7D08A122C7516A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37D25739309B03C14D201E831A4774D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E515D310C843F0E8C3A2F0759D0D289B /* Pods-BonMotPlayground.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BonMotPlayground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BonMotPlayground/Pods-BonMotPlayground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BonMotPlayground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3EA310251A04299D7283655AE6649378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933921BD47EF4DCC7DFBE03A7584FF78 /* BonMot.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BonMot/BonMot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BonMot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BonMot/BonMot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BonMot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8D5D101F5AB906F7F235EB18869D62F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933921BD47EF4DCC7DFBE03A7584FF78 /* BonMot.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BonMot/BonMot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BonMot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BonMot/BonMot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BonMot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED9551E499A5F5115F3F3A2D65789356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8473149B62990099C63405F625C914E5 /* Pods-BonMotPlayground.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BonMotPlayground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BonMotPlayground/Pods-BonMotPlayground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BonMotPlayground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FC61E2E5C1FFD120EB361F8AA9C7B1 /* Build configuration list for PBXNativeTarget "Pods-BonMotPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9551E499A5F5115F3F3A2D65789356 /* Debug */,
+				37D25739309B03C14D201E831A4774D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FC77A1FF866335AB59020D0F4D5264F /* Build configuration list for PBXNativeTarget "BonMot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA310251A04299D7283655AE6649378 /* Debug */,
+				8D5D101F5AB906F7F235EB18869D62F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

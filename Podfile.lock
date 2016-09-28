@@ -1,0 +1,16 @@
+PODS:
+  - BonMot (4.0-beta1)
+
+DEPENDENCIES:
+  - BonMot (from `/Users/brianking/sandbox/BonMot`)
+
+EXTERNAL SOURCES:
+  BonMot:
+    :path: "/Users/brianking/sandbox/BonMot"
+
+SPEC CHECKSUMS:
+  BonMot: d4c6a235b85f574160d6b97acb7d2afd42567a4d
+
+PODFILE CHECKSUM: 4c099c780581b42773ff4ae506f538eec2ded205
+
+COCOAPODS: 1.0.1
